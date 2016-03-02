@@ -1,0 +1,6 @@
+machine:
+  services:
+    - docker
+test:
+  override:
+    - docker run -v ${PWD}:/test -it test /bin/sh -c 'cd LearningCSharp.Test;dnu restore;dnx test'
