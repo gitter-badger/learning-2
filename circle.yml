@@ -3,4 +3,4 @@ machine:
     - docker
 test:
   override:
-    - docker run -v ${PWD}:/test -it test /bin/sh -c 'cd LearningCSharp.Test;dnu restore;dnx test'
+    - docker run -v ${PWD}:/project/learning -it f799/aspnet /bin/sh -c 'cd LearningCSharp.Test;dnu restore;dnx test'
