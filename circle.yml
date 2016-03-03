@@ -1,7 +1,11 @@
 machine:
   services:
     - docker
+
+dependencies:
+  override:
+    - docker pull f799/learning
+
 test:
   override:
-    - exit 0
-#    - docker run -v ${PWD}:/project/learning -it f799/aspnet /bin/sh -c 'cd LearningCSharp.Test;dnu restore;dnx test'
+    - docker run -v ${PWD}:/project -it f799/learning /bin/sh -c 'cd LearningCSharp.Test;dnu restore;dnx test'
