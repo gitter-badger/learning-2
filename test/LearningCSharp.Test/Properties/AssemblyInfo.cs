@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿#if false
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -21,3 +22,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("022c36dc-46e7-4158-9124-a3b63dbbcb90")]
+#endif

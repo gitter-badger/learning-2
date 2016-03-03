@@ -1,5 +1,5 @@
-﻿using System;
-using System.Linq;
+﻿//using System;
+//using System.Linq;
 using Xunit;
 
 namespace LearningCSharp.Test
@@ -9,9 +9,9 @@ namespace LearningCSharp.Test
     public class UnitTest1
     {
         [Fact]
-        public void UnitTest1()
+        public void TestMethod1()
         {
-            Assert.Equals("Test", "Test");
+            Assert.Equal("Test", "Test");
         }
     }
 }
