@@ -4,5 +4,6 @@ MAINTAINER f799 <kokudou330@gmail.com>
 
 ENV PROJECT /project
 
+RUN apt-get -y update
 RUN mkdir $PROJECT
 WORKDIR $PROJECT
