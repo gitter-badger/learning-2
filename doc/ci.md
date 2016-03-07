@@ -2,7 +2,7 @@
 - circleci.yml
 
 # Travis CI
-- traviceci.yml
+- .travis.yml
 
 # Windows Azure
 - build.ps1
@@ -10,5 +10,5 @@
 # Jenkins
 - build.bash
 
-# Aplay
+# Appveyor
 - build.ps1
