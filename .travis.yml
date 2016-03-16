@@ -12,7 +12,7 @@ addons:
     - zlib1g
 before_install:
   - if test "$TRAVIS_OS_NAME" == "osx"; then brew update; brew install icu4c; fi
-  - chmod -R +x ./test
+  - chmod -R +x test/
 #  - chmod +x build.sh
 mono:
   - 4.0.5
