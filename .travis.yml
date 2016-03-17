@@ -13,7 +13,7 @@ addons:
 before_install:
   - if test "$TRAVIS_OS_NAME" == "osx"; then brew update; brew install icu4c; fi
 #  - chmod -R +x test/
-#  - chmod +x build.sh
+  - chmod +x build.sh
 mono:
   - 4.0.5
 os:
@@ -23,7 +23,8 @@ osx_image: xcode7.1
 #test:
 #  - cd ./test/LearningCSharp.Test;dnu restore;dnu build;dnx test
 script:
-  - exit 0
+#  - exit 0
+  - cd ./test/LearningCSharp.Test;dnu restore;dnu build;dnx test
 #  - ./build.sh --quiet verify
 env:
   - KOREBUILD_TEST_SKIPMONO=1
