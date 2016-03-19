@@ -1,5 +1,5 @@
 language: csharp
-sudo: false
+sudo: required
  -before_install:
   - chmod +x build.sh
 mono:
