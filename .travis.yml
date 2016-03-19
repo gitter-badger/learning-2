@@ -1,5 +1,7 @@
 language: csharp
 sudo: false
+ -before_install:
+  - chmod +x build.sh
 mono:
   - beta
 env:
